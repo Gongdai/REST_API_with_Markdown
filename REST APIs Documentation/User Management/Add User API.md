@@ -33,9 +33,9 @@ Call this API to create a new user account in Netbrain system.
 |phoneNumber | string |The phone number of the user.|
 |department | string |The department that the user belongs to.|
 |description | string |Any description about the account.|
-|allowChangePassword | bool |Specify whether to allow the user to change password independently. This parameter is required.|
+|allowChangePassword* | bool |Specify whether to allow the user to change password independently.|
 |deactivatedTime | string |Specify the time when the account is expired.|
-|isSystemAdmin | bool |Decide whether to allocate system administrator role to the user. This parameter is required.|
+|isSystemAdmin*| bool |Decide whether to allocate system administrator role to the user.|
 |tenants | list of tenant object |Specify a list of tenants for the user.<br>Only required if the parameter isSystemAdmin is false.<br>▪ tenantName (string) - the tenant that the user can access.<br>▪ isTenantAdmin (bool) - decide whether to allocate the tenant administrator role to the user. If false, you need to specify a domain for the user to access.<br>▪ allowCreateDomain (bool) - decide whether to allow the user to create domains.<br>▪ domains - required only if the parameter isTenantAdmin is false.<br>---domainName - the domain name.<br>---domainRoles - the role of the domain user.|
 
 > ***Example***
