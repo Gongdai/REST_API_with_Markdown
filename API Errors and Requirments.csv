@@ -1,0 +1,42 @@
+﻿REST API Summary,Total 92 APIs,Total 45 User Cases
+,,
+Top 3 REST API Bugs:,,
+"1. Explain Documenttation not clear, Required input parameters not clarified. Some explaination of input parameters too simple to be understood.(Trigger diagnosis API)",,
+"2. Some APIs only can be called from python not on Postman, e.g. Export map API, Get all devices of a domain API…",,
+3. A lot of problem occurred in Site API need to be corrected.(Check API Details Table).,,
+,,
+Top 3 REST API Requirment:,,
+"1. For each API response, a ""Message: "" attribute is needed, to point out error clearly during calling API, separate HTTP status and function calling result status.",,
+"2. For All POST, PUT and DELETE method APIs, in success response should return the body detail information which has been created, modified or deleted.",,
+"3. Impove our online help RESTful API library, provide more commands in code sample. Some users still don't know how to call our API after review our libaray.",,
+4. One-Ip Table can use MAC as a input.,,
+,,
+Top 3 Use Cases,,
+"1. Present Trigger Daignosis API detailly, provide coding sample on online-help. According to the gigantic input body, we 'd better provide a fully Input Body structure, let users to only need to follow our stucture sample and put in their attribute values directly. ",,
+"2. Present Get One-Ip table API detailly, provide coding sample on online-help. Improve the explaination for each input parameter. The API documant on Swagger have errors.",,
+"3. Provide a clear logical relationship exlpanation between three path APIs, and describe all possible errors when calling those APIs with solving methods. ",,
+,,
+New or Deleted API Requirements,,
+"1. Create Devices Group API(we only have get group devices API but cannot create a device group by calling API). 
+      1a. Delete Device Group API.
+      1b. Get All Device Group API.
+      1c. Update Devices in Device Group API.",,
+,,
+"2. Get Device Data API (Not only configuration file, some customers are also need Route, ARP, MAC and NDP tables).",,
+3. CRUD Site dynamic search criteria API. (we can only get all devices in site but no advenced search).,,
+"4. Run Qapp API (customer want to trigger a Qapp by callling API, but we don't have any API support running Qapp so far).",,
+5. create schedule discovery task ,,
+6. Event Console API.,,
+,,
+New Issues,,
+"1. As a netbrain user with a domian admin privilege, when calling get tenant and get domain API, user can only retrive the value of tenant ID but no domain ID, that is strange, if the user cannot get both of them, user cannot specify a working domain by calling API.(Bug reported)",,
+"2. User with “Engineer” role, can check all site information from GUI but when calling get site information API the response shows ""permission error"" that is not reasonable.",,
+"3. Calling trigger diagnosis API with Path map, only show devices in map, no other informations",,
+4.privilege 由 框架 区分。,,
+5. statuscode response，http success or functional success,,
+"6. Calculate path API and trigger path API should return same response, (trigger should return a json of hoplist also)   
+      6a. Get path result API, if the respose is failed, an explanation of failed reason should be provided in response also.
+      6b. Trigger path API, can parse runbook input variables from API calling input json body.(gigantic devices number from Keith).
+             And when we set the stub as on-demand, when customer open the returned url directly by copy paste to browser, the runbook pre-set in stub would be deleted.
+             Unless click the map link in ""API Triggered Tasks"" first to trigger the pre-set runbook running. That is not reasonable.",,
+"7. Roles and Privileges Table not accuracy, some number doesn't exist, some numbers not only correspond to one privilege, table not full cover the privilege information provided in UI Roles.",,
