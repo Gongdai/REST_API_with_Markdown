@@ -4,6 +4,8 @@ This API call is used to crreate a scheduled Discovery task to a domain.
 
 Note that, as the key, task name should be unique system wide.
 
+***Warning:*** We only consider "Scan the following IPs" as input method.
+
 ## Detail Information
 
 > **Title** : Create Scheduled Discovery Task API<br>
