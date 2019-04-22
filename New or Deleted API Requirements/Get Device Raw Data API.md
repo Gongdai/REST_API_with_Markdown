@@ -25,7 +25,7 @@ Call this API to get the raw data for a specified device by device hostname or m
 
 ## Query Parameters(****required***)
 
-> |**Name**|**Type**|**Description**|
+|**Name**|**Type**|**Description**|
 |------|------|------|
 |<img width=100/>|<img width=100/>|<img width=500/>|
 |hostnameOrIp* | string  | The hostname or mgmIp of the device.  |
