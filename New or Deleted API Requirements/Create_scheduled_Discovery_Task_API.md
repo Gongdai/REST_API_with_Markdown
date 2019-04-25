@@ -1,5 +1,5 @@
 
-## ***POST*** /V1/CMDB/Benchmark/Tasks
+## ***POST*** /V1/CMDB/Discovery/Tasks
 This API call is used to crreate a scheduled Discovery task to a domain.
 
 Note that, as the key, task name should be unique system wide.
