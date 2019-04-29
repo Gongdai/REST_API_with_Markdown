@@ -70,7 +70,7 @@ body = {
 
 # acknowledged partial successfully.
 {
-    "message":"Warning: [XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX, ...] acknowledge/closed/delete partial successfully! Reason:some IDs in event id list are not found.",
+    "message":"Warning: [XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX, ...] acknowledge/closed/delete partial successfully! Reason:some IDs in "eventIDs" list are not found.",
     "statusCode" : "790206", # HTTP status code: 206 partial content.
     "statusDescription": "Success with warning."
 }
