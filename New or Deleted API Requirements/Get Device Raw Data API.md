@@ -24,20 +24,20 @@ Call this API to get the raw data for a specified device by device hostname or m
 |**Name**|**Type**|**Description**|
 |------|------|------|
 |<img width=100/>|<img width=100/>|<img width=500/>|
-|hostname* | string  | The hostname of the device.  |
-|IP* | string  | The management IP of  the device.  |
-|tableName* | string  | the name of table which customer wants to retrieve. |
-|command* | string  | The command which supported by customer system operation.  |
+|hostname* | list of string  | The hostname of the device.  |
+|IP* | list of string  | The management IP of  the device.  |
+|table* | list of string  | the name of table which customer wants to retrieve. |
+|cliCommand* | list of string  | The command which supported by customer system operation.  |
 |baseline| string | Whether the customer want to retrieve the data from current baseline, currently we only support data from current baseline|
 
 > ***Example***
 
 ```python
 {
-    "hostname" : "R1",
-    "IP" : "10.2.3.4",
-    "tableName" : "config..."
-    "command" : "show interface...",
+    "hostname" : ["R1", "R2"],
+    "IP" : ["10.2.3.4", "10.2.3.5"],
+    "table" : ["config...", "MAC"],
+    "cliCommand" : ["show interface...", "show spinning tree..."],
     "baseline" : "currentBaseline"
 }
 ```
