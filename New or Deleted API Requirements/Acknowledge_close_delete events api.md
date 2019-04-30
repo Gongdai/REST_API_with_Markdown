@@ -23,7 +23,7 @@
 |------|------|------|
 |<img width=100/>|<img width=100/>|<img width=500/>|
 |eventID* | list of string  | A string list include the taskIDs of all events which customer want to acknowledged. |
-|eventStatus| integer | Modify event status<br> 1 : set event as acknowledged<br> 2 : set event as closed | # Only for PUT function
+|eventStatus| list of integer | Modify event status<br> 1 : set event as acknowledged<br> 2 : set event as closed | # Only for PUT function
 
 ***Example:***
 
@@ -42,9 +42,9 @@ data form for DELETE function = {
 
 body for PUT function = {
     "eventIDs" : [
-        {"eventID" : "4d409565-eb4d-817e-8180-c24c25d309c1", "eventStatus" : 1}, #set event as acknowledged
-        {"eventID" : "4d409565-eb4d-817e-8180-............", "eventStatus" : 2}, #set event as closed
-        .
+        {"eventID" : "4d409565-eb4d-817e-8180-c24c25d309c1", "eventStatus" : [1]}, #set event as acknowledged
+        {"eventID" : "4d409565-eb4d-817e-8180-............", "eventStatus" : [2]}, #set event as closed
+        {"eventID" : "4d409565-eb4d-817e-8180-............", "eventStatus" : [1, 2]}, #set event as acknowledged and closed
         .
         .
     ]
