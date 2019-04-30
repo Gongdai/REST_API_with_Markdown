@@ -2,7 +2,7 @@
 # Get Device Data API
 
 ## ***GET*** /V1/CMDB/Devices/DeviceRawData{?hostname}&{?IP}&{?tableName}&{?command}
-Call this API to get the raw data for a specified device by device hostname or mgmIp.
+Call this API to get the raw data for specified devices by device hostname or mgmIp.
 
 ## Detail Information
 
