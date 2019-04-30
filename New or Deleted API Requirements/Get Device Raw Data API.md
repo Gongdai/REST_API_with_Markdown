@@ -1,7 +1,7 @@
 
 # Get Device Data API
 
-## ***GET*** /V1/CMDB/Devices/DeviceRawData/{?hostnameOrIp}/{?command}
+## ***GET*** /V1/CMDB/Devices/DeviceRawData
 Call this API to get the raw data for a specified device by device hostname or mgmIp.
 
 ## Detail Information
@@ -21,15 +21,26 @@ Call this API to get the raw data for a specified device by device hostname or m
 
 ## Request body(****required***)
 
->No request body.
-
-## Query Parameters(****required***)
-
 |**Name**|**Type**|**Description**|
 |------|------|------|
 |<img width=100/>|<img width=100/>|<img width=500/>|
-|hostnameOrIp* | string  | The hostname or mgmIp of the device.  |
-|command | string | The command which supported by customer system operation.|
+|hostname* | string  | The hostname of the device.  |
+|IP* | string  | The management IP of  the device.  |
+|rawData| string | The command which supported by customer system operation or the name of table which customer wants to retrieve.|
+|currentBaseline| Boolean | Whether the customer want to retrieve the data from current baseline, currently we only support data from current baseline|
+
+> ***Example***
+
+```python
+# Success response:
+
+{
+    "hostname" : "R1",
+    "IP" : "10.2.3.4",
+    "rawData" : "show interface...",
+    "currentBaseline" : True
+}
+```
 
 ## Headers
 
