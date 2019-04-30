@@ -68,7 +68,7 @@ body for PUT function = {
 # Modify successfully.
 {
     "message":"[XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX, ...] have been acknowledged successfully, [XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX, ...] have been closed successfully!"
-    "statusCode" : 790200,[XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX, ...]
+    "statusCode" : 790200,
     "statusDescription": "Success."
 }
 
