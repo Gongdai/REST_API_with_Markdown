@@ -67,7 +67,7 @@ body = {
 
 ```python
 {
-    "Message" : "Qapp run successfully!",
+    "Message" : "Qapp trigger successfully!",
     "statusCode" : "790200",
     "statusDescription" : "Success."
 }
