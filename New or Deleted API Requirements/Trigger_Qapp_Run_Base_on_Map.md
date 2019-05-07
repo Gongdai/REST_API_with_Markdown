@@ -19,16 +19,15 @@ Calling this API to trigger a Qapp run base on an existing map with input of map
 
 ## Query Parameters(****required***)
 
-|**Name**|**Type**|**Description**|
-|------|------|------|
-|<img width=100/>|<img width=100/>|<img width=500/>|
-|mapID* | string  | The identify ID of one existing map.  |
+> No required query parameters.
 
  ## Request body(****required***)
 
 |**Name**|**Type**|**Description**|
 |------|------|------|
 |<img width=100/>|<img width=100/>|<img width=500/>|
+|mapID* | string  | The identify ID of one existing map.  |
+|pageID* | string  | The identify ID of one existing page in one existing map.  |
 |QappPath* | string  | The absolute path of the Qapp in NetBrain system. |
 |dataSource* | integer  | 1 : Current baseline <br> 2 : Select a time period <br> 3 : Select a time point <br> 4 : Pull live data regularly <br> 5 : Pull live data once <br>  |
 |dataSource.from| string | If customer select 2 in dataSource, the value of this field must be provided.|
