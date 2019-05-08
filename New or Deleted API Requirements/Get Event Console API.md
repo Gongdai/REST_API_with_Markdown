@@ -38,8 +38,8 @@ After we set up the primary key for each event, then we can provide the other fu
 |eventType|list of integer| The collection region of events.<br>1: My Events<br>2: Shared Events<br>1: Global Events|
 |level|list of integer| The collection level of events.<br>1: Error<br>2:Warning|
 |timeRange| integer |The collection time region of events.<br>24: last 24 hours<br>48: last 48 hours<br>7: last 7 days|
-|fromTime| date |customized events collection start time.|
-|toTime| date |customized events collection end time.|
+|fromTime| date |customized events collection start time. We only support UTC time structure, customer need to follow the data example.|
+|toTime| date |customized events collection end time.We only support UTC time structure, customer need to follow the data example.|
 
 ***Example:***
 
