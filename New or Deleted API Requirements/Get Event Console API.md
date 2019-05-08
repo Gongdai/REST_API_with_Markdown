@@ -49,8 +49,8 @@ data = {
     "eventType" : [1,2,3],
     "level" : [1,2],
     "timeRange": 24,
-    "fromTime":"yyyy-mm-dd:hh-mm",
-    "toTime":"yyyy-mm-dd:hh-mm"
+    "fromTime":"yyyy-mm-ddThh:mm:ssZ",
+    "toTime":"yyyy-mm-ddThh:mm:ssZ"
 }
 ```
 
