@@ -18,7 +18,7 @@ After we set up the primary key for each event, then we can provide the other fu
 
 ## Detail Information
 
-> **Title** : Get Event Console API<br>
+> **Title** : Get Events API<br>
 
 > **Version** : 03/20/2019.
 
