@@ -4,7 +4,8 @@
 
 ## Detail Information
 
-> **Title** : Modify Event Console API<br>
+> **Title** : Set Event Status API<br>
+              Delete Event API
 
 > **Version** : 04/30/2019.
 
