@@ -1,6 +1,6 @@
 
-## ***PUT*** / acknowledge or close event alert
-## ***DELETE*** / delete event alert
+## ***PUT*** / set event status
+## ***DELETE*** / delete event 
 
 ## Detail Information
 
