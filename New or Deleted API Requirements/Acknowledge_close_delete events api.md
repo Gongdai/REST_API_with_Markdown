@@ -1,10 +1,11 @@
 
-## ***PUT*** / acknowledge or close event alert
-## ***DELETE*** / delete event alert
+## ***PUT*** / set event status
+## ***DELETE*** / delete event 
 
 ## Detail Information
 
-> **Title** : Modify Event Console API<br>
+> **Title** : Set Event Status API<br>
+              Delete Event API
 
 > **Version** : 04/30/2019.
 
