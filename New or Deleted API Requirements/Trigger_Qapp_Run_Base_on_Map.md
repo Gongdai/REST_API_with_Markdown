@@ -2,7 +2,7 @@
 ## ***POST*** /V1/CMDB/Maps/TriggerQapp{?mapID}{?pageID}
 Calling this API to trigger a Qapp run base on an existing map with input of mapID, pageID and Qapp information.
 
-The purpose of this API is service for "Embeded Map", when customer open the embeded map to check the data view, the real time data is necessary for customers. So we need to schedule the Qapp to run with a period to renew the data continuously. But in embeded map, we don't allow customer to make any changes to the map, even run Qapp. Then we need a API to trigger the Qapp run automatically on back end.
+The purpose of this API is service for "Embeded Map", when customer open the embeded map to check the data view, the real time data is necessary for customers. So we need to trigger the Qapp to run with a period to renew the data continuously. But in embeded map, we don't allow customer to make any changes to the map, even run Qapp. Then we need a API to trigger the Qapp run automatically on back end.
 
 ## Detail Information
 
