@@ -1,6 +1,6 @@
 
-## ***POST*** /V1/CMDB/Maps/TriggerQapp{?mapID}
-Calling this API to trigger a Qapp run base on an existing map with input of mapID and Qapp information.
+## ***POST*** /V1/CMDB/Maps/TriggerQapp{?mapID}{?pageID}
+Calling this API to trigger a Qapp run base on an existing map with input of mapID, pageID and Qapp information.
 
 ## Detail Information
 
