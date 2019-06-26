@@ -58,6 +58,7 @@ data = {
 
 |**Name**|**Type**|**Description**|
 |------|------|------|
+| eventID | string | the unique ID of each event |
 | device | string |device name or ip|
 | event | string |description of event |
 | firstTime |string| The first time of happend of this event|
